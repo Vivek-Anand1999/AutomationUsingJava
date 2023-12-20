@@ -108,14 +108,14 @@ public class SpiceJetPractise {
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
         // ! calling from function---
-        ChoosingTheRadioButtonForTrip(driver);
+        // ChoosingTheRadioButtonForTrip(driver);
         // ChoosingCountry(driver);
-        // ChooseDepartureCityAndArrivalCity(driver);
+        ChooseDepartureCityAndArrivalCity(driver);
         // chooseCheckBox(driver);
         // choosePassengers(driver);
         // chooseStaticCurrency(driver);
         // ClickOnSearch(driver);
-        // chooseDate(driver);
+        chooseDate(driver);
         Thread.sleep(5000);
         closeWebsite(driver);
     }
