@@ -13,14 +13,15 @@ public class AlertPage {
         // driver.findElement(By.id("alertbtn")).click();
         driver.findElement(By.id("confirmbtn")).click();
         System.out.println(driver.switchTo().alert().getText());
-        // driver.switchTo().alert().accept();//!this for accept /ok/yes or any positive approach
-        driver.switchTo().alert().dismiss();//! this is for cancle no/ or any negative approach
-        
+        // driver.switchTo().alert().accept();//!this for accept /ok/yes or any positive
+        // approach
+        driver.switchTo().alert().dismiss();// ! this is for cancle no/ or any negative approach
+
     }
 
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver",
-                "C:\\Users\\vivek\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+                "/home/vivek/Downloads/chromedriver-linux64/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");

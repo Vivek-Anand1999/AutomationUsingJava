@@ -101,7 +101,7 @@ public class SpiceJetPractise {
 
     public static void main(String args[]) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
-                "C:\\Users\\vivek\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+                "/home/vivek/Downloads/chromedriver-linux64/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
